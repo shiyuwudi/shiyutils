@@ -1,3 +1,4 @@
+const fs = require('fs');
 /**
  * 递归删除非空目录
  * @param {string} path 路径
@@ -14,7 +15,7 @@ function deleteFolderRecursive(path) {
         });
         fs.rmdirSync(path);
     }
-};
+}
 
 module.exports = {
     deleteFolderRecursive,
