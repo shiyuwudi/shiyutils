@@ -1,6 +1,6 @@
 {
   "name": "shiyutils",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "shiyu utils, for both front and back end",
   "main": "index.js",
   "scripts": {

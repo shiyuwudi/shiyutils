@@ -34,10 +34,11 @@ function formatterNumber(value) {
  */
 function setToValue(obj, value, path) {
   var i;
-  for (i = 0; i < path.length - 1; i++)
-    obj = obj[path[i]];
+  const pathArr = path.split('.');
+  for (i = 0; i < pathArr.length - 1; i++)
+    obj = obj[pathArr[i]];
 
-  obj[path[i]] = value;
+  obj[pathArr[i]] = value;
 }
 
 
